@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style>
+      button {
+        background-color: #9DC183;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center;">
+      <h1>test</h1>
+      <button onclick="displayNumber()">New Number</button>
+      <p id="number"></p>
+    </div>
+    <script>
+      function displayNumber() {
+        var number = Math.floor(Math.random() * 100) + 1;
+        document.getElementById("number").innerHTML = number;
+      }
+    </script>
+  </body>
+</html>
